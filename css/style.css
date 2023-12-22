@@ -1,0 +1,706 @@
+/*----- CSS Reset Started -----*/
+* {
+  margin: 0;
+  padding: 0;
+  font-family: Arial, Helvetica, sans-serif;
+  box-sizing: border-box;
+  list-style: none;
+  text-decoration: none;
+}
+/*----- CSS Reset Ended -----*/
+
+/*----- Navbar Styles Started -----*/
+#navbar {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  background-color: white;
+  border-bottom: 1px solid rgba(0, 0, 0, 0.0862745098);
+  position: sticky;
+  top: 0;
+  left: 0;
+  z-index: 9999;
+}
+
+#navbar nav {
+  position: relative;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1.4rem 0;
+  width: 69rem;
+}
+
+.nav-logo a img {
+  width: 8.5rem;
+}
+
+#nav-right {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  gap: 2.6rem;
+}
+
+#nav-links ul {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  gap: 2.6rem;
+}
+#nav-links ul li {
+  display: inline-block;
+}
+#nav-links ul li a {
+  text-decoration: none;
+  color: rgba(102, 102, 102, 0.768627451);
+  font-size: 0.95rem;
+}
+#nav-links ul li a:hover {
+  color: #387ed1;
+}
+
+#hamburger-icons {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+}
+#hamburger-icons i {
+  font-size: 1.15rem;
+  opacity: 0.6;
+  z-index: 999;
+}
+#hamburger-icons .close {
+  display: none;
+}
+
+.active #nav-menu {
+  transform: translateY(0%);
+}
+
+#nav-menu {
+  z-index: 99;
+  position: absolute;
+  top: 4rem;
+  right: 0;
+  transform: translateY(-130%);
+  width: 44rem;
+  box-shadow: 0 0.1rem 0.8rem 0 rgba(31, 31, 31, 0.232);
+  background-color: white;
+}
+
+#nav-menu-top {
+  display: none;
+}
+
+#nav-menu-middle {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 0.5rem;
+}
+#nav-menu-middle .box {
+  margin-top: 2rem;
+  width: 10rem;
+  height: 7rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 0.5rem;
+}
+#nav-menu-middle .box img {
+  width: 3.25rem;
+  opacity: 1;
+}
+#nav-menu-middle .box h3 {
+  font-size: 0.9rem;
+  font-weight: lighter;
+  color: #666666;
+}
+#nav-menu-middle .box p {
+  font-size: 0.75rem;
+  color: rgba(102, 102, 102, 0.6941176471);
+}
+#nav-menu-middle .box:hover img {
+  opacity: 0.8;
+}
+#nav-menu-middle .box:hover h3 {
+  color: rgba(56, 125, 209, 0.6941176471);
+}
+#nav-menu-middle .varsity,
+#nav-menu-middle .tqna {
+  display: none;
+}
+
+#nav-menu-bottom {
+  width: 100%;
+  background-color: rgb(250, 250, 251);
+  display: flex;
+  gap: 2.3rem;
+  padding: 2rem 2rem 1.5rem 2rem;
+}
+#nav-menu-bottom .box {
+  display: flex;
+  flex-direction: column;
+  gap: 0.9rem;
+  width: 9rem;
+}
+#nav-menu-bottom .box img {
+  width: 3.25rem;
+  opacity: 1;
+}
+#nav-menu-bottom .box h3 {
+  font-size: 1.05rem;
+  font-weight: lighter;
+  color: #666666;
+  margin-bottom: 0.5rem;
+}
+#nav-menu-bottom .box a {
+  font-size: 0.92rem;
+  color: rgba(102, 102, 102, 0.6274509804);
+}
+#nav-menu-bottom .box a:hover {
+  color: rgba(56, 125, 209, 0.6941176471);
+}
+#nav-menu-bottom .education {
+  width: 12rem;
+}
+#nav-menu-bottom .education h3 {
+  margin-left: 1.2rem;
+}
+#nav-menu-bottom .education .box-cont {
+  display: flex;
+  gap: 1rem;
+}
+#nav-menu-bottom .education .box-cont .inside-box-cont {
+  width: 50%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+#nav-menu-bottom .education .box-cont .inside-box-cont img {
+  width: 2rem;
+  opacity: 1;
+}
+#nav-menu-bottom .education .box-cont .inside-box-cont p {
+  font-size: 0.92rem;
+  color: rgba(102, 102, 102, 0.6274509804);
+  margin-top: 1rem;
+}
+#nav-menu-bottom .education .box-cont .inside-box-cont:hover img {
+  opacity: 0.8;
+}
+#nav-menu-bottom .education .box-cont .inside-box-cont:hover p {
+  color: rgba(56, 125, 209, 0.6941176471);
+}
+
+/*----- Navbar Styles Ended -----*/
+/*----- Main Styles Started -----*/
+#hero {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 8rem;
+  margin-bottom: 4rem;
+}
+
+/*-----** Trading Section Styles Started **-----*/
+#trading {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.trading-img {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  margin-top: 5.5rem;
+  width: 70rem;
+}
+.trading-img img {
+  width: 100%;
+}
+
+.trading-txt {
+  margin: 4.5rem 0 3rem 0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+/*-----** Trading Section Styles Ended **-----*/
+/*-----** Stock Broker Section Styles Started **-----*/
+#stock-broker {
+  display: flex;
+  align-items: center;
+  gap: 8rem;
+  width: 70rem;
+}
+#stock-broker .stock-broker-img img {
+  width: 100%;
+}
+
+.stock-broker-txt {
+  width: 43%;
+}
+.stock-broker-txt ul {
+  margin: 2rem 0;
+  display: flex;
+  justify-content: space-between;
+  gap: 1.6rem;
+  padding-left: 1rem;
+}
+.stock-broker-txt ul li {
+  list-style: disc;
+  font-size: 1rem;
+  line-height: 2rem;
+  font-weight: lighter;
+  color: #666666;
+}
+.stock-broker-txt .press-logos {
+  display: flex;
+  justify-content: end;
+}
+.stock-broker-txt .press-logos img {
+  width: 90%;
+}
+
+/*-----** Stock Broker Section Styles Ended **-----*/
+/*-----** Ecosystem Section Styles Started **-----*/
+#ecosystem {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 2rem;
+  width: 50rem;
+}
+
+.eco-para {
+  width: 30rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 1rem;
+}
+.eco-para h2 {
+  text-align: center;
+}
+.eco-para p {
+  text-align: center;
+}
+
+.ecosystem-img img {
+  width: 100%;
+}
+
+/*-----** Ecosystem Section Styles Ended **-----*/
+/*-----** Pricing Section Styles Started **-----*/
+#pricing {
+  width: 62rem;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  gap: 5rem;
+}
+
+.pricing-txt {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+}
+.pricing-txt .secondary-btns {
+  margin-top: 2rem;
+}
+
+.pricing-box {
+  display: flex;
+}
+.pricing-box .box {
+  border: 1px solid rgba(102, 102, 102, 0.2784313725);
+  padding: 2rem;
+  width: 16rem;
+  height: 12rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.pricing-box .box:nth-child(1) {
+  border-right: none;
+}
+.pricing-box .box h3 {
+  font-size: 2.5rem;
+  font-weight: lighter;
+  padding-bottom: 2rem;
+}
+.pricing-box .box p {
+  text-align: center;
+}
+
+/*-----** Pricing Section Styles Ended **-----*/
+/*-----** Education Section Styles Started **-----*/
+#education {
+  width: 68rem;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  gap: 8rem;
+}
+#education .education-img img {
+  width: 100%;
+}
+
+.education-txt {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 1.5rem;
+}
+.education-txt h2 {
+  font-size: 1.5rem;
+}
+.education-txt .secondary-btns {
+  margin-bottom: 1rem;
+}
+
+/*-----** Education Section Styles Ended **-----*/
+/*-----** Signup Section Styles Started **-----*/
+#signup {
+  width: 60rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+#signup h2 {
+  text-align: center;
+}
+#signup p {
+  text-align: center;
+}
+#signup .signup-btn {
+  margin-top: 2rem;
+}
+
+/*-----** Signup Section Styles Ended **-----*/
+/*----- Main Styles Ended -----*/
+/*----- Footer Section Styles Started -----*/
+#foot {
+  background-color: rgb(250, 250, 251);
+  width: 100%;
+  padding: 2rem 0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.footer-top {
+  display: flex;
+  gap: 5rem;
+  width: 67rem;
+}
+.footer-top .box {
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+}
+.footer-top .box:nth-child(1) {
+  width: 13rem;
+  gap: 0;
+}
+.footer-top .box img {
+  width: 10rem;
+}
+.footer-top .box p {
+  font-size: 0.8rem;
+  color: rgba(102, 102, 102, 0.768627451);
+  margin: 1.5rem 0;
+}
+.footer-top .box .social-links {
+  display: flex;
+  gap: 1.6rem;
+}
+.footer-top .box .social-links a i {
+  color: #666666;
+  font-size: 1.2rem;
+}
+.footer-top .box .social-links a i:hover {
+  color: #387ed1;
+}
+.footer-top .box h3 {
+  color: #666666;
+  font-weight: lighter;
+}
+.footer-top .box .links {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+.footer-top .box .links a {
+  color: rgba(102, 102, 102, 0.768627451);
+}
+.footer-top .box .links a:hover {
+  color: #387ed1;
+}
+
+.footer-middle {
+  width: 67rem;
+  margin: 2rem 0;
+}
+.footer-middle p {
+  font-size: 0.67rem;
+  color: rgba(102, 102, 102, 0.631372549);
+  line-height: 1.2rem;
+}
+.footer-middle p a {
+  color: #387ed1;
+}
+.footer-middle p a:hover {
+  color: black;
+}
+
+.footer-bottom .links {
+  display: flex;
+  gap: 2rem;
+}
+.footer-bottom .links li a {
+  color: rgba(102, 102, 102, 0.7803921569);
+  font-size: 0.75rem;
+}
+.footer-bottom .links li a:hover {
+  color: #387ed1;
+}
+
+/*----- Footer Section Styles Ended -----*/
+/*----- Common Styles Started -----*/
+.signup-btn {
+  font-size: 1.25rem;
+  background-color: #387ed1;
+  color: white;
+  padding: 0.7rem 2.1rem;
+  border: none;
+  border-radius: 0.2rem;
+}
+.signup-btn:hover {
+  background-color: black;
+}
+
+.primary-heading {
+  color: #373636;
+  font-size: 3rem;
+  font-weight: lighter;
+  margin-bottom: 1.4rem;
+}
+
+.primary-para {
+  color: #666666;
+  font-size: 1.3rem;
+  font-weight: lighter;
+}
+
+.secondary-heading {
+  font-size: 2rem;
+  font-weight: lighter;
+  margin-bottom: 1.5rem;
+  color: #373636;
+}
+
+.secondary-para {
+  font-size: 1rem;
+  font-weight: lighter;
+  line-height: 2rem;
+  color: #666666;
+}
+
+.secondary-btns {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  gap: 2rem;
+}
+.secondary-btns a {
+  color: #387ed1;
+}
+.secondary-btns a:hover {
+  color: #666666;
+}
+
+/*----- Common Styles Ended -----*/
+/*----- Responsive Styles Started -----*/
+@media screen and (max-width: 1172px) {
+  #navbar nav,
+  #stock-broker,
+  #pricing,
+  #education,
+  .footer-top,
+  .footer-middle,
+  .footer-bottom {
+    width: 96%;
+  }
+  .trading-img {
+    width: 98%;
+  }
+  #stock-broker {
+    gap: 4rem;
+  }
+  #education {
+    gap: 6rem;
+  }
+  .footer-bottom .links {
+    flex-wrap: wrap;
+  }
+}
+@media screen and (max-width: 906px) {
+  #navbar nav {
+    width: 98%;
+  }
+  .nav-logo a img {
+    width: 7rem;
+    margin-left: 0.5rem;
+  }
+  #nav-links {
+    display: none;
+  }
+  #hamburger-icons i {
+    transform: scale(1.2);
+    margin-right: 1rem;
+  }
+  .active #hamburger-icons .open {
+    display: none;
+  }
+  .active #hamburger-icons .close {
+    display: block;
+  }
+  #nav-menu {
+    top: 0.6rem;
+    width: 100%;
+  }
+  #nav-menu-top {
+    display: block;
+  }
+  #nav-menu-top ul {
+    padding: 2.5rem 2rem;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    row-gap: 1.5rem;
+    -moz-column-gap: 5rem;
+         column-gap: 5rem;
+    border-bottom: 0.01rem solid rgba(128, 128, 128, 0.132);
+  }
+  #nav-menu-top ul li a {
+    font-size: 0.93rem;
+    color: rgb(126, 126, 126);
+  }
+  #nav-menu-middle {
+    margin: 2rem;
+    display: grid;
+    row-gap: 2rem;
+    grid-template-columns: 1fr 1fr;
+  }
+  #nav-menu-middle .box {
+    display: flex;
+    flex-direction: row;
+    justify-content: start;
+    margin-top: 0;
+    height: 2rem;
+    gap: 0.5rem;
+  }
+  #nav-menu-middle .box img {
+    width: 2rem;
+  }
+  #nav-menu-middle .box p {
+    display: none;
+  }
+  #nav-menu-middle .varsity img,
+  #nav-menu-middle .tqna img {
+    width: 1rem;
+    margin-left: 0.5rem;
+  }
+  #nav-menu-bottom {
+    gap: 6rem;
+  }
+  #nav-menu-bottom .education {
+    display: none;
+  }
+}
+@media screen and (max-width: 896px) {
+  .nav-logo a img {
+    width: 6rem;
+  }
+  #trading,
+  #stock-broker,
+  #ecosystem,
+  #pricing,
+  #education,
+  #signup,
+  .footer-top,
+  .footer-middle,
+  .footer-bottom {
+    width: 92%;
+  }
+  .trading-txt h2,
+  .trading-txt p {
+    text-align: center;
+  }
+  #stock-broker {
+    flex-direction: column;
+  }
+  .stock-broker-txt {
+    width: 100%;
+  }
+  .stock-broker-txt ul {
+    flex-direction: column;
+    padding-left: 3rem;
+  }
+  .stock-broker-txt .press-logos {
+    justify-content: start;
+  }
+  .stock-broker-txt .press-logos img {
+    width: 100%;
+  }
+  #pricing {
+    flex-direction: column;
+    gap: 2rem;
+  }
+  .pricing-box {
+    flex-direction: column;
+    width: 98%;
+  }
+  .pricing-box .box {
+    border: 1px solid rgba(102, 102, 102, 0.2784313725);
+    width: 100%;
+  }
+  .pricing-box .box:nth-child(1) {
+    border-right: 1px solid rgba(102, 102, 102, 0.2784313725);
+    border-bottom: none;
+  }
+  #education {
+    flex-direction: column;
+    gap: 3rem;
+  }
+  .secondary-heading {
+    margin-bottom: 0;
+  }
+  .footer-top {
+    flex-direction: column;
+    gap: 3rem;
+  }
+}
+@media screen and (max-width: 518px) {
+  .eco-para {
+    width: 94%;
+  }
+}
+/*----- Responsive Styles Ended -----*/
