@@ -1,27 +1,20 @@
 # Zerodha-Clone
 
-Welcome to the Zerodha Homepage Clone repository! This project is a recreation of the Zerodha homepage using HTML, CSS, SCSS and JavaScript aiming to showcase web development skills and design aesthetics. Whether you're here to explore, contribute, or simply learn, we're excited to have you!. You can view the live version of this project at [Live Demo](https://krishna-singha.github.io/Zerodha-Clone/).
+Welcome to the Zerodha Homepage Clone repository! This project is a recreation of the Zerodha homepage using HTML, CSS, SCSS and JavaScript. The purpose of this clone is to showcase the design and layout of the Zerodha homepage for educational and practice purposes. Whether you're here to explore, contribute, or simply learn, we're excited to have you!. You can view the live version of this project at [Live Demo](https://krishna-singha.github.io/Zerodha-Clone/).
 
 <br>
 
 ## Table of Contents ➡️
 
-- Overview
-- Live Demo
-- Features
-- Technologies Used
-- Author
-- License
+- [Live Demo](#live-demo)
+- [Features](#features)
+- [Technologies Used](#technologies-used)
+- [Author](#author)
+- [License](#license)
 
 <br>
 
-## Overview 🌟
-
-- This project is a clone of the homepage of Zerodha, a leading stock brokerage platform in India. The purpose of this clone is to showcase the design and layout of the Zerodha homepage for educational and practice purposes. It is not intended for commercial use or to impersonate Zerodha in any way.
-
-<br>
-
-## Live Demo ▶️
+## Live Demo
 
 Explore the live version of this project using the following link:
 
@@ -30,7 +23,7 @@ Explore the live version of this project using the following link:
    ```
 <br>
 
-## Features ⚙️
+## Features
 
 - <b>Responsive Design:</b> The homepage is designed to be responsive, providing a seamless experience across various devices and screen sizes.
 - <b>Navbar Interactivity:</b> Mimics the interactivity of the Zerodha homepage's navigation bar.
@@ -40,7 +33,7 @@ Footer: Includes links to various sections and social media.
 
 <br>
 
-## Technologies Used 🛠️
+## Technologies Used
 
 - `HTML5`
 - `CSS3`
@@ -49,14 +42,14 @@ Footer: Includes links to various sections and social media.
 
 <br>
 
-## Author 👨‍💻
+## Author
 
 - **Author Name:** `Krishna Singha`
 - **GitHub:** [My GitHub Profile](https://github.com/krishna-singha)
 - **Linkedin:** [My Linkedin Profile](https://linkedin.com/in/krishnasingha)
 <br>
 
-## License 📄
+## License
    - This project is licensed under the `MIT License` - see the [LICENSE.md](https://github.com/krishna-singha/Zerodha-Clone/blob/main/LICENSE) file for details.
    
    <br>
