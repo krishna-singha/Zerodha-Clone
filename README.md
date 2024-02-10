@@ -50,7 +50,7 @@ Footer: Includes links to various sections and social media.
 <br>
 
 ## License
-   - This project is licensed under the `MIT License` - see the [LICENSE.md](https://github.com/krishna-singha/Zerodha-Clone/blob/main/LICENSE) file for details.
+   - This project is licensed under the `MIT License` - see the [LICENSE.md](LICENSE.md) file for details.
    
    <br>
 
